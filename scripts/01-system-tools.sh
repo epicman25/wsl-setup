@@ -22,8 +22,15 @@ sudo nala install -y \
     btop \
     httpie \
     redis-tools \
+    direnv \
     python3-pip \
     python3-venv \
     pipx
+
+# Install NVM
+if [ ! -d "$HOME/.nvm" ]; then
+    echo "Installing NVM..."
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+fi
 
 echo "=== System tools installation complete ==="

@@ -7,7 +7,7 @@ echo "=== Installing Python Development Tools with Pipx ==="
 pipx ensurepath
 
 # List of tools to install via pipx
-TOOLS=("pgcli" "bandit" "mypy" "httpie")
+TOOLS=("pgcli" "bandit" "mypy" "httpie" "pre-commit")
 
 for tool in "${TOOLS[@]}"; do
     echo "Installing $tool..."
