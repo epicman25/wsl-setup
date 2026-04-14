@@ -1,0 +1,16 @@
+venvs are in /home/epicman/.local/share/pipx/venvs
+apps are exposed on your $PATH at /home/epicman/.local/bin
+manual pages are exposed at /home/epicman/.local/share/man
+   package bandit 1.9.4, installed using Python 3.12.3
+    - bandit
+    - bandit-baseline
+    - bandit-config-generator
+    - man1/bandit.1
+   package mypy 1.20.1, installed using Python 3.12.3
+    - dmypy
+    - mypy
+    - mypyc
+    - stubgen
+    - stubtest
+   package pgcli 4.4.0, installed using Python 3.12.3
+    - pgcli
