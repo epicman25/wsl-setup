@@ -23,9 +23,17 @@ sudo nala install -y \
     httpie \
     redis-tools \
     direnv \
+    jq \
+    fzf \
     python3-pip \
     python3-venv \
     pipx
+
+# Fix common Docker completion bug in WSL
+if [ -L /usr/share/zsh/vendor-completions/_docker ] && [ ! -e /usr/share/zsh/vendor-completions/_docker ]; then
+    echo "Removing broken Docker completion symlink..."
+    sudo rm /usr/share/zsh/vendor-completions/_docker
+fi
 
 # Install NVM
 if [ ! -d "$HOME/.nvm" ]; then
