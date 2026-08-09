@@ -11,7 +11,7 @@ This repository contains all the setup instructions, system specifications, and 
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/Rewardsy/wsl-setup.git
+   git clone https://github.com/epicman25/wsl-setup.git
    cd wsl-setup
    ```
 
@@ -35,6 +35,13 @@ This repository contains all the setup instructions, system specifications, and 
      ```
      *Installs Zsh, Oh My Zsh, custom plugins, and links the backed-up configuration files.*
 
+   - **Step 4: Setup SSH**
+     ```bash
+     ./scripts/04-ssh-setup.sh
+     ```
+
+3. **Docker (optional):** see [DOCKER-SETUP.md](DOCKER-SETUP.md) for Docker Desktop + WSL 2 integration.
+
 ## Updating Backups
 To update the configurations stored in this repository with your current active settings:
 ```bash
@@ -47,4 +54,4 @@ To update the configurations stored in this repository with your current active 
 ## Current System Specifications
 - **OS**: Linux (WSL)
 - **Architecture**: x86_64
-- **Last Updated**: $(date)
+- Details in `info/system_specs.txt`, `info/nala_packages.txt`, `info/python_tools.txt`
